@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <!-- 
+    fontawesome.加载字体图标 
+    script 添加defer属性，延迟执行script  与html渲染语句并行执行，在html执行后再执行script
+  -->
+  <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
+  <script defer src="./assets/fontawesome/js/solid.min.js"></script>
+</head>
+<body>
+    <!-- 制作导航栏 
+        sticky 粘性 
+    
+    -->
+    <main class="text-white">
+        <header>
+          <!-- 
+           nav 固定顶部：sticky
+          
+           top-1 : 1 = 4px ，如果设置top为20px，20px / 4px  = 5 ，即top-5
+          
+           设置背景色为渐变色：
+           bg-linear-to-r 从左到右，开始颜色为rose颜色，500深度，结束颜色为rose颜色，500深度
+
+           设置padding / margin
+           pl-2 : padding-left:8px
+           ml-2 : margin-left:8px
+           
+           px-2: padding:0 8px padding左右间距8px
+           mx-2 同理
+
+          字体
+          text-2xl : 24px 
+            font-size: 1.5rem /* 24px */; line-height: calc(2 / 1.5);
+
+          text-3xl : 30px
+ 
+           -->
+            <nav class="sticky top-0 pl-2 bg-linear-to-r from-rose-500 to-rose-500 ">
+              
+              <div class="flex items-center p-2 gap-2">
+                <img src="./assets/images/logo-inverted.png" width="50"> 
+                <div class="font-bold text-2xl">
+                  tw:<span class="text-[14px] text-sky-900">mf</span>
+                </div> 
+              </div>
+            </nav>
+        </header>
+    </main>
+</body>
+</html>
